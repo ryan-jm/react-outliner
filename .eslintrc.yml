@@ -13,4 +13,5 @@ parserOptions:
 plugins:
   - prettier
   - "@typescript-eslint"
+ignorePatterns: ["lib"]
 rules: { "prettier/prettier": "error" }
