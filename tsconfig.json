@@ -2,8 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "Components": ["src/components"],
-      "Assets": ["src/assets"]
+      "@/*": ["./src/*"]
     },
     "outDir": "lib/esm",
     "target": "es5",
