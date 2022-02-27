@@ -1,12 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "Components": ["src/components"],
+      "Assets": ["src/assets"]
+    },
+    "outDir": "lib/esm",
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["es6", "dom", "es2016"],
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Recommended"
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
 }
