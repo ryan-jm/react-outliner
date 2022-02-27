@@ -14,4 +14,4 @@ plugins:
   - prettier
   - "@typescript-eslint"
 ignorePatterns: ["lib"]
-rules: { "prettier/prettier": "error" }
+rules: { "prettier/prettier": "error", "import/extensions": ["error", { "tsx": "never", "ts": "never" }] }
